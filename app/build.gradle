@@ -1,0 +1,74 @@
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.8'
+    }
+}
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId 'com.app.writeyourpackagenamehere'
+        manifestPlaceholders = [onesignal_app_id : '7170b87c-c67c-4563-a118-0f94105ab1b7',
+                                onesignal_google_project_number: 'REMOTE']
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 2
+        versionName "1.1"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'androidx.navigation:navigation-runtime:2.3.5'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.balysv:material-ripple:1.0.2'
+    implementation 'com.google.android.gms:play-services-ads:15.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.3'
+    implementation 'com.google.firebase:firebase-messaging:17.3.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.onesignal:OneSignal:3.9.3'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.6'
+    implementation 'com.shreyaspatil:MaterialNavigationView:1.2'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.android.volley:volley:1.2.0'
+
+    implementation 'android.arch.persistence.room:runtime:1.0.0-beta2'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
+
+    implementation 'com.github.fevziomurtekin:custom-progress-dialog:0.1.0'
+
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+}
+
+

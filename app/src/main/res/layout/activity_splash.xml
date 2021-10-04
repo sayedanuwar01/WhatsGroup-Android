@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/from"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/dev"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/dev_name"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

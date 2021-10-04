@@ -1,0 +1,54 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp"
+    android:elevation="4dp"
+    android:background="@color/background_color">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="@color/colorPrimary"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/category_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:background="@drawable/dark_gradiant"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignBottom="@+id/category_image">
+
+                <TextView
+                    android:id="@+id/category_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="start"
+                    android:layout_marginStart="25dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</androidx.cardview.widget.CardView>

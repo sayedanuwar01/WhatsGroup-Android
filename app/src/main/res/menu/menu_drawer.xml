@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_recent"
+            android:checked="true"
+            android:icon="@drawable/ic_side_latest"
+            android:title="@string/drawer_new_recipes" />
+
+        <item
+            android:id="@+id/drawer_category"
+            android:icon="@drawable/ic_baseline_view_carousel_24"
+            android:title="@string/drawer_category" />
+
+        <item
+            android:id="@+id/drawer_favorite"
+            android:icon="@drawable/ic_side_favorite"
+            android:title="@string/drawer_favorite" />
+
+        <item
+            android:id="@+id/drawer_add"
+            android:icon="@drawable/ic_baseline_cloud_upload_24"
+            android:title="@string/drawer_add" />
+
+    </group>
+
+    <!--<item android:title="@string/drawer_sub_social">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/drawer_facebook"
+                    android:icon="@drawable/ic_facebook"
+                    android:title="@string/drawer_facebook"
+                    android:visible="true" />
+
+                <item
+                    android:id="@+id/drawer_twitter"
+                    android:icon="@drawable/ic_twitter"
+                    android:title="@string/drawer_twitter" />
+
+                <item
+                    android:id="@+id/drawer_instagram"
+                    android:icon="@drawable/ic_instagram"
+                    android:title="@string/drawer_instagram" />
+
+            </group>
+
+        </menu>
+
+    </item>-->
+
+    <item android:title="@string/drawer_sub_row">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/drawer_share"
+                    android:icon="@drawable/ic_share_black"
+                    android:title="@string/drawer_share"
+                    android:visible="true" />
+
+                <item
+                    android:id="@+id/drawer_rate"
+                    android:icon="@drawable/ic_side_star"
+                    android:title="@string/drawer_rate" />
+
+                <item
+                    android:id="@+id/drawer_about"
+                    android:icon="@drawable/ic_side_about"
+                    android:title="@string/drawer_about" />
+
+                <item
+                    android:id="@+id/drawer_policy"
+                    android:icon="@drawable/ic_side_flag"
+                    android:title="@string/drawer_policy" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

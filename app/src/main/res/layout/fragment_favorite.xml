@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/item_offset"
+            android:clipToPadding="false"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_thumbnail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:text="@string/img_no"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

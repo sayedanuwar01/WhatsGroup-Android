@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--application name-->
+    <string name="app_name">WhatsGroup Links</string>
+
+    <!--tab title-->
+    <string name="tab_recent">All Groups</string>
+    <string name="tab_category">Category</string>
+    <string name="tab_favorite">Favorite</string>
+
+    <!--about information-->
+    <string name="app_version">Version 1.0.0</string>
+    <string name="app_email">cyberiagamming@gmail.com</string>
+    <string name="dev_name">FuzionWorld</string>
+    <string name="app_copyright">Copyright &#169; 2021 FuzionWorld Developers \n All rights reserved</string>
+    <string name="share_summary">Share to your friends</string>
+    <string name="rate_summary">Give your rate and feedback</string>
+    <string name="more_summary">More apps from developer</string>
+    <string name="title_app_name">Application Name</string>
+    <string name="title_app_version">Build Version</string>
+    <string name="title_app_email">Email</string>
+    <string name="title_app_copyright">Copyright</string>
+    <string name="title_app_share">Share</string>
+    <string name="title_app_rate">Rate</string>
+    <string name="title_app_more">More</string>
+    <string name="about_us">About Us</string>
+
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+
+    <!--admob banner and interstitial id-->
+    <string name="admob_publisher_id">pub-3940256099982544</string>
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <!-- play store application link i.e more apps -->
+    <string name="play_more_apps">https://play.google.com/store/apps/dev?id=</string>
+    <string name="privacy_policy_url"></string>
+
+    <!--navigation drawer menu name-->
+    <string name="drawer_new_recipes">All Groups</string>
+    <string name="drawer_category">Category</string>
+    <string name="drawer_favorite">Favorite</string>
+    <string name="drawer_rate">Give Rate</string>
+    <string name="drawer_more">More</string>
+    <string name="drawer_share">Share</string>
+    <string name="drawer_about">About Us</string>
+    <string name="drawer_sub_row">Other</string>
+
+    <!--network-->
+    <string name="failed_connect_network">No Internet Connection!!</string>
+
+    <!--exit dialog-->
+    <string name="dialog_option_yes">Yes</string>
+    <string name="dialog_option_rate_us">Rate Us</string>
+    <string name="dialog_option_more">More Apps</string>
+    <string name="dialog_close_msg">Are you sure want to quit?</string>
+
+    <!--others-->
+    <string name="search_hint">Search&#8230;</string>
+    <string name="menu_share">Share</string>
+    <string name="search">Search</string>
+    <string name="img_no">No Favorite Found</string>
+    <string name="favorite_added">Added to Favorite</string>
+    <string name="favorite_removed">Removed from Favorite</string>
+    <string name="share_text">Download WhatsGroup Pro</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="go_back">Back</string>
+    <string name="drawer_add">Add Your Group</string>
+    <string name="drawer_policy">Privacy Policy</string>
+    <string name="drawer_sub_social">Our Social</string>
+    <string name="drawer_instagram">Instagram</string>
+    <string name="drawer_twitter">Twitter</string>
+    <string name="drawer_facebook">Facebook</string>
+    <string name="from">FROM</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_category">Category</string>
+    <string name="nav_add_group">Add Group</string>
+    <string name="nav_profile">Favorites</string>
+    <string name="group_link_here">Group link here</string>
+    <string name="group_name">Group Name</string>
+    <string name="logo_png">logo.png</string>
+    <string name="select_category">Select Category : </string>
+    <string name="add_group">ADD GROUP</string>
+
+</resources>

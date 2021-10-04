@@ -1,0 +1,68 @@
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/item_offset"
+                android:layout_marginTop="@dimen/item_offset"
+                android:layout_marginEnd="@dimen/item_offset"
+                android:layout_marginBottom="@dimen/item_offset"
+                android:clipToPadding="false"
+                android:scrollbars="none" />
+
+        </RelativeLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/admob_banner_id" />
+
+        <RelativeLayout
+            android:id="@+id/no_network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/no_network"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/top_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
+
+        <ProgressBar
+            android:id="@+id/bottom_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_category"
+        style="?android:attr/dropDownItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:hint="Select Category"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+        tools:ignore="LabelFor" />
+</LinearLayout>
